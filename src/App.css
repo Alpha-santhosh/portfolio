@@ -1,38 +1,402 @@
-.App {
+header {
+  padding-inline: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  z-index: 11;
+  box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -10px;
+  background: #0a192f;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.logo {
+  border: 1px solid rgb(100, 255, 218);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(100, 255, 218);
+  transform: rotate(45deg);
+  cursor: pointer;
+  font-size: 18px;
+}
+
+nav {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+}
+
+.nav_ul {
+  display: flex;
+  gap: 20px;
+}
+
+.nav_li {
+  list-style: none;
+  color: rgb(204, 214, 246);
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+.nav_a {
+  padding: 12px 10px;
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+}
+
+.nav_a:hover {
+  color: rgb(100, 255, 218);
+}
+
+.resume_btn {
+  color: rgb(100, 255, 218);
+  background-color: transparent;
+  border: 1px solid rgb(100, 255, 218);
+  border-radius: 3px;
+  padding: 0.75rem 1rem;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  margin-left: 10px;
+  font-size: 13px;
+}
+
+.resume_btn:hover {
+  background-color: rgba(100, 255, 218, 0.07);
+}
+
+.contact {
+  padding: 200px 150px;
+  margin: 0px auto;
+  width: 100%;
+  max-width: 1600px;
+  min-height: 100vh;
+}
+
+section {
+  margin: 0px auto;
+  padding: 150px 0px;
+  max-width: 1000px;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+h1 {
+  color: rgb(100, 255, 218);
+  margin: 0px 0px 20px 3px;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono",
+    "Lucida Console", Monaco, monospace;
+}
+
+h2 {
+  font-size: 80px;
+  line-height: 1.1;
+  margin: 0px;
+  font-weight: 600;
+  color: rgb(204, 214, 246);
+}
+
+h3 {
+  font-size: 80px;
+  line-height: 1.1;
+  color: rgb(136, 146, 176);
+  font-weight: 600;
+  margin: 0px 0px 10px;
+}
+
+.home_p {
+  margin-top: 25px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.home_p p {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.get_in_touch {
+  color: rgb(100, 255, 218);
+  background-color: transparent;
+  border: 1px solid rgb(100, 255, 218);
+  border-radius: 3px;
+  padding: 1.25rem 1.75rem;
+  font-size: 14px;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono",
+    "Lucida Console", Monaco, monospace;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.get_in_touch:hover {
+  background-color: rgba(100, 255, 218, 0.07);
+}
+
+.about_top {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 10px 0px 40px;
+}
+
+.subheading {
+  font-size: 32px;
+  font-weight: 600;
+  color: rgb(204, 214, 246);
+  letter-spacing: 1px;
+}
+
+.line {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 300px;
+  background-color: rgb(48, 60, 85);
+  position: relative;
+  top: -5px;
+  margin-left: 20px;
+}
+
+span {
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono",
+    "Lucida Console", Monaco, monospace;
+  font-weight: normal;
+  color: rgb(100, 255, 218);
+  font-size: 20px;
+}
+
+.about_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.about_content_top {
+  width: 60%;
+  max-width: 480px;
+}
+
+.about_content_top p span {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.about_photo_section {
+  position: relative;
+  width: 40%;
+  max-width: 300px;
+  margin-left: 60px;
+}
+
+.profile_img {
+  border-radius: 5%;
+  border: 1px solid rgb(100, 255, 218);
+  position: relative;
+}
+
+.skills_section {
+  margin: 0px auto;
+  padding: 150px 0px;
+  position: relative;
+  max-width: 700px;
+  justify-content: flex-start;
+}
+
+.skill_ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(250px, 200px));
+  overflow: hidden;
+  padding: 0px;
+  margin: 20px 0px 0px;
+  list-style: none;
+}
+
+.skill_li::before {
+  content: "▹";
+  position: absolute;
+  left: 0px;
+  color: rgb(100, 255, 218);
+  font-size: 14px;
+  line-height: 12px;
+}
+
+.skill_li {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono",
+    "Lucida Console", Monaco, monospace;
+  font-size: 13px;
+  color: rgb(136, 146, 176);
+}
+
+.contact_h3 {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  display: block;
+  color: rgb(100, 255, 218);
+  font-size: 16px;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono",
+    "Lucida Console", Monaco, monospace;
+  font-weight: normal;
+}
+
+h4 {
+  font-size: 60px;
+  font-weight: 600;
+  color: rgb(204, 214, 246);
+  width: 66%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.contact_section_btn {
+  width: max-content;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card_h4 {
+  font-size: 13px;
+  font-weight: normal;
+  width: 100%;
+  color: rgb(100, 255, 218);
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono",
+    "Lucida Console", Monaco, monospace;
+  margin-block: 10px;
+  text-align: left;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h5 {
+  font-size: 28px;
+  margin: 0px 0px 20px;
+  color: rgb(204, 214, 246);
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  text-decoration-skip-ink: auto;
+  color: inherit;
+  position: relative;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  cursor: pointer;
+}
+
+.p_descr {
+  box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -15px;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  position: relative;
+  z-index: 2;
+  padding: 25px;
+  background-color: rgb(23, 42, 69);
+  color: rgb(168, 178, 209);
+  border-radius: 3px;
+  width: 80%;
+}
+
+.p_descr p {
+  margin: 0px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.p_ul {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px;
+  margin: 25px 0px 10px;
+  list-style: none;
+  width: 80%;
+}
+
+.p_li {
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono",
+    "Lucida Console", Monaco, monospace;
+  font-size: 13px;
+  color: rgb(136, 146, 176);
+  margin-right: 20px;
+  margin-bottom: 7px;
+  white-space: nowrap;
+}
+
+.card_links {
+  display: flex;
+  gap: 20px;
+  position: relative;
+  margin-top: 10px;
+  color: rgb(204, 214, 246);
+}
+
+.fa-github {
+  font-size: 22px;
+}
+
+.card {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left_side_card {
+  width: 50%;
+}
+
+.project_container {
+  width: 100%;
   display: flex;
   flex-direction: column;
+  gap: 180px;
+}
+
+.right_side_card {
+  width: 50%;
+  position: relative;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  /* border: 1px solid rgb(100, 255, 218); */
 }
 
-.App-link {
-  color: #61dafb;
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.color_print {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(100, 255, 219, 0.196);
+  top: 0px;
+  transition: all 0.4s ease-in;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.color_print:hover {
+  background-color: transparent;
 }
