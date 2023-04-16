@@ -2,7 +2,7 @@ import React from 'react'
 
 function Skills() {
     return (
-        <section id='skill' className='skills_section'>
+        <section id='skill'>
             <div className="about_top">
                 <h3 className='subheading'> <span>03.</span> Skills</h3>
                 <div className="line"></div>

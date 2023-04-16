@@ -1,3 +1,82 @@
+.app {
+  position: relative;
+}
+
+.social_section {
+  position: absolute;
+  z-index: 15;
+  top: 0px;
+}
+
+.right_link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  position: fixed;
+  bottom: 5px;
+  left: 50px;
+}
+
+.left_link {
+  position: fixed;
+  right: 50px;
+  bottom: 5px;
+}
+
+.ul_of_links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ul_of_links li {
+  list-style: none;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  transition: all 0.2s  ;
+}
+
+.ul_of_links li:hover {
+  color: rgb(100, 255, 218);
+  transform: scale(1.08);
+}
+
+.fa-github,
+.fa-linkedin,
+.fa-envelope {
+  font-size: 18px;
+}
+
+.r_line {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 150px;
+  margin: 0px auto;
+  background-color: rgb(168, 178, 209);
+}
+.l_line {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 100px;
+  margin: 0px auto;
+  background-color: rgb(168, 178, 209);
+}
+
+.email_rotate {
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono",
+    "Lucida Console", Monaco, monospace;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+  margin: 20px auto;
+  padding: 10px;
+}
+
 header {
   padding-inline: 50px;
   display: flex;
@@ -23,9 +102,10 @@ header {
   align-items: center;
   justify-content: center;
   color: rgb(100, 255, 218);
-  transform: rotate(45deg);
   cursor: pointer;
   font-size: 18px;
+  border-radius: 50%;
+  letter-spacing: 2px;
 }
 
 nav {
@@ -44,6 +124,7 @@ nav {
   color: rgb(204, 214, 246);
   font-size: 13px;
   letter-spacing: 2px;
+  transition: all 0.1s ease-in-out;
 }
 
 .nav_a {
@@ -54,8 +135,7 @@ nav {
   cursor: pointer;
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
 }
-
-.nav_a:hover {
+.nav_li:hover {
   color: rgb(100, 255, 218);
 }
 
@@ -125,8 +205,7 @@ h3 {
 
 .home_p {
   margin-top: 25px;
-  width: 100%;
-  max-width: 500px;
+  max-width: 70%;
 }
 
 .home_p p {
@@ -228,8 +307,6 @@ span {
 }
 
 .skill_ul {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(250px, 200px));
   overflow: hidden;
   padding: 0px;
   margin: 20px 0px 0px;
@@ -240,9 +317,9 @@ span {
   content: "▹";
   position: absolute;
   left: 0px;
+  top: 20%;
   color: rgb(100, 255, 218);
-  font-size: 14px;
-  line-height: 12px;
+  font-size: 12px;
 }
 
 .skill_li {
@@ -251,7 +328,7 @@ span {
   padding-left: 20px;
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono",
     "Lucida Console", Monaco, monospace;
-  font-size: 13px;
+  font-size: 18px;
   color: rgb(136, 146, 176);
 }
 

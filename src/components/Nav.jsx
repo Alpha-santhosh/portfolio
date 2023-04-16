@@ -9,7 +9,7 @@ function Nav() {
           S
         </div>
         <nav>
-          <ol type='01' className='nav_ul'>
+          <ul type='01' className='nav_ul'>
             <li className='nav_li'>
               <Link to='/'>Home</Link>
             </li>
@@ -25,7 +25,7 @@ function Nav() {
             <li className='nav_li'>
               <Link to='/contact'>Contact</Link>
             </li>
-          </ol>
+          </ul>
           <a href="" className='resume_btn'>Resume</a>
         </nav>
       </header>
