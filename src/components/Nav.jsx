@@ -35,7 +35,7 @@ function Nav() {
               <li><a href="https://github.com/Alpha-santhosh" target='_blank'><i class="fa-brands fa-github"></i></a></li>
               <li><a href="https://www.linkedin.com/in/santhosh-subramani/" target='_blank'><i class="fa-brands fa-linkedin"></i></a></li>
               <li><a href="mailto:subramanisanthosh00@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
-              <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href="https://www.instagram.com/santhosh_subramani_20/" target='_blank'><i class="fa-brands fa-instagram"></i></a></li>
             </ul>
             <div className="r_line"></div>
           </div>
