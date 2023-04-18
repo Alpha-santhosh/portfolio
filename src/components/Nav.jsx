@@ -7,7 +7,7 @@ function Nav() {
     <>
       <header>
         <div className="logo">
-          S
+          Santhosh S 
         </div>
         <nav>
           <ul className='nav_ul'>

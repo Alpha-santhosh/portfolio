@@ -16,8 +16,9 @@ function About() {
                     <p>If you're looking for a talented and motivated front-end developer to bring your web application to life, please don't hesitate to contact me. I look forward to working with you!</p>
                 </div>
                 <div className="about_photo_section">
-                    <a href="https://github.com/Alpha-santhosh" target='_blank' >
+                    <a className='profile_link' href="https://github.com/Alpha-santhosh" target='_blank' >
                         <img className='profile_img' src="https://avatars.githubusercontent.com/u/83463926?v=4" alt="photo" />
+                        <div className="color_print" style={{ borderRadius: "5%" }}></div>
                     </a>
                 </div>
             </div>
