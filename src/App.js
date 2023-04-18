@@ -6,12 +6,11 @@ import Home from "./components/Home";
 import Nav from "./components/Nav";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
-import Social from "./components/Social";
 
 function App() {
   return (
     <div className="app">
-      <Social />
+      {/* <Social /> */}
       <Nav />
       <Routes>
         <Route index element={<Home />} />
